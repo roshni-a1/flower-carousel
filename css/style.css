@@ -1,0 +1,294 @@
+/* ===== General Styles ===== */
+body {
+  margin: 0;
+  background-color: gray;
+  font-family: cursive;
+  color: white;
+  box-sizing: border-box;
+}
+
+header {
+  color: white;
+}
+
+/* ===== Container Styling ===== */
+.container {
+  background-color: #000000;
+  width: 90%;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+/* ===== Logo Styling ===== */
+.logo {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ===== Navigation Sidebar ===== */
+.nav,
+.nav ul,
+.nav ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding-top: 30px;
+  transition: 0.3s;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.nav ul li a:hover {
+  color: crimson;
+}
+
+/* ===== Image Section ===== */
+.custom-img-box {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.custom-img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Column Padding Reset ===== */
+.col-lg-3, .col-lg-4, .col-lg-6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== Box Styling ===== */
+.box {
+  background-color: lightblue;
+  margin-top: 0;
+  padding: 0;
+  height: auto;
+}
+
+.box.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Video Element Styling ===== */
+.video-element {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+  max-height: 450px;
+  display: block;
+}
+
+/* ===== About Section ===== */
+.container2 {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  color: navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== Blog Section ===== */
+.blog ul, .blog ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    text-align: center;
+  font-size: 20px;
+}
+
+.blog ul li a {
+  padding-bottom: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.box2 {
+  float: left;
+}
+
+/* ===== 3D Footer Styling ===== */
+.copyright-footer {
+  height: 100px;
+  background: #1e1e1e;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px 15px;
+  border-radius: 15px;
+  box-shadow:
+    8px 8px 15px rgba(0, 0, 0, 0.7),
+    -8px -8px 15px rgba(60, 60, 60, 0.9);
+  color: #eee;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.copyright-footer:hover {
+  box-shadow:
+    inset 6px 6px 10px rgba(0, 0, 0, 0.7),
+    inset -6px -6px 10px rgba(60, 60, 60, 0.9);
+}
+
+.copyright-footer p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.copyright-footer strong {
+  color: red;
+  text-shadow: 1px 1px 2px blue;
+}
+
+.copyright-footer i.fas.fa-heart {
+  color: #e74c3c;
+  margin-left: 6px;
+  text-shadow:
+    0 0 8px #e74c3c,
+    0 0 12px #c0392b;
+  animation: pulseHeart 2s infinite;
+}
+
+/* Heart Pulse Animation */
+@keyframes pulseHeart {
+  0%, 100% {
+    text-shadow:
+      0 0 8px #e74c3c,
+      0 0 12px #c0392b;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow:
+      0 0 12px #ff6f61,
+      0 0 18px #ff4534;
+    transform: scale(1.2);
+  }
+}
+
+
+
+
+  .star-five {
+      margin: 50px 0;
+      position: relative;
+      display: block;
+      color: red;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg);
+    }
+    .star-five:before {
+      border-bottom: 80px solid red;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -40px;
+      left: -60px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    .star-five:after {
+      position: absolute;
+      display: block;
+      color: red;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid red;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+
+
+.flower {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 100px auto;
+}
+
+.petal {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: pink;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(calc(var(--i) * 60deg)) translate(30px) rotate(calc(var(--i) * -60deg));
+  top: 30px;
+  left: 30px;
+  box-shadow: inset -2px -2px 4px rgba(255,255,255,0.3),
+              inset 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.center {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+  top: 35px;
+  left: 35px;
+  z-index: 2;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.flower2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+}
+
+.peta2 {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  background: linear-gradient(to bottom, #ff69b4, #ff1493);
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(calc(var(--i) * 10deg)) translate(0px) rotate(calc(var(--i) * 100deg));
+  top: 50px;
+  left: 85px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.center2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: gold;
+  border-radius: 50%;
+  top: 90px;
+  left: 80px;
+  z-index: 2;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+
